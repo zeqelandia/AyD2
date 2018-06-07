@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Falta Uno</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet"> 
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<section>
+		<div class="main">
+			<div class="contenedor-main animated" id="contenedor-main">
+				<div class="titulo">
+					<h1 class="jugadores">Construido por jugadores<br>
+					para los jugadores</h1>
+					<p class="descripcion"><b>Falta uno</b> es una plataforma inspirada por el trabajo en equipo. No importa si eres un jugador profesional o amateur, puedes organizar un partido, anotarte para jugar, comunicarte con otros jugadores, y los mas importante: <b>divertirte!</b> </p>
+				</div>
+				<div class="contenedor-login">
+					<div class="login">
+						<form action="script.php">
+							<table>
+								<tr>
+									<td>
+										<label class="lbl-login">Nombre de Usuario</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="txt-login" type="text" name="userName" placeholder="Ingrese el nombre de usuario">
+									</td>
+								</tr>
+								<tr>
+									<td>
+									<br>
+										<label class="lbl-login">Contraseña</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="txt-login" type="password" name="userPassword" placeholder="Ingrese la contraseña">
+									</td>
+								</tr>
+								<tr>
+									<td>
+									<br>
+										<center><input class="button boton-login" type="submit" name="btnLogin" value="Ingresar"></center>
+									</td>
+								</tr>
+						</form>
+								<tr>
+									<td>
+										<br>
+										<center><label class="lbl-login">Todavia no tienes cuenta? Unete gratis!</label></center>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<center><input onclick="crearUsuario();" class="button boton-login" type="button" name="btnNuevoUsuario" id="btnNuevoUsuario" value="Crear Cuenta"></center>
+									</td>
+								</tr>
+							</table>
+					</div>
+				</div>
+			</div>
+			<div class="animated contenedor-crearCuenta animated" id="contenedor-crearCuenta">
+				<div class="crearCuenta animated" id="crearCuenta">
+					<center>
+						<label class="lbl-login lbl-user">Que tipo de usuario<br>quieres crear?</label><br><br><br><br>
+						<input onclick="crearJugador();" class="button boton-login" type="button" id="btn-jugador" value="Jugador"><br><br><br>
+						<label class="lbl-login">O</label><br><br><br>
+						<input onclick="crearRecinto();" class="button boton-login" type="button" id="btn-recinto" value="Recinto"><br><br><br><br><br><br>
+						<input onclick="volverMain();" type="button" class="button" value="Volver">
+					</center>
+				</div>
+					<div class="crearCuenta animated" id="crearCuenta-jugador">
+						<form action="signUp.php">
+							<table id="tabla-jugador">
+								<tr>
+									<td colspan="2">
+										<center>
+											<label class="lbl-login lbl-user">Jugador</label>
+										</center>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Nickname</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="nickname" id="nickname" placeholder="Inregrese nombre de usuario" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Contraseña</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="password" name="password" id="password" placeholder="Ingrese una contraseña" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Mail</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="email" name="mail" id="mail" placeholder="Ingrese su email" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Nombre y Apellido</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="nombre" id="nombre" placeholder="Ingrese su(s) nombre(s) y apellido(s)" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Fecha de Nacimiento</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="date" name="fecha" id="fecha" placeholder="Ingrese su fecha de nacimiento" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Posicion</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="posicion" id="posicion" placeholder="En que posicion juega?" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td class="td-boton">
+									<br>
+										<input onclick="volverCuenta();" type="button" id="volver-cuenta" value="Volver" class="button">
+									</td>
+									<td class="td-boton">
+									<br>
+										<input type="submit" name="crearJugador" value="Crear" class="button">
+									</td>
+								</tr>
+							</table>
+							<input type="hidden" name="tipoUsuario" value="jugador">
+						</form>
+					</div>
+					<div id="contenedor-ayuda" class="animated">
+							<div id="mapa-ayuda">
+								<img id="img-maps" src="maps.png">
+							</div>
+					</div>
+					<div class="crearCuenta animated" id="crearCuenta-recinto">
+						<form action="signUp.php">
+							<table id="tabla-jugador">
+								<tr>
+									<td colspan="2">
+										<center>
+											<label class="lbl-login lbl-user">Recinto</label>
+										</center>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Nickname</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="nickname" id="nicknameRecinto" placeholder="Inregrese nombre de usuario" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Contraseña</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="password" name="password" id="passwordRecinto" placeholder="Ingrese una contraseña" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Mail</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="email" name="mail" id="mailRecinto" placeholder="Ingrese su email" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Nombre</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="nombre" id="nombreRecinto" placeholder="Ingrese el nombre del recinto" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Direccion</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<input type="text" name="fecha" id="direccion" placeholder="Ingrese la direccion del recinto" class="txt-cuenta">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<label class="lbl-login">Google Maps</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="text" name="maps" id="maps" placeholder="Pegue el link de google maps del recinto" class="txt-cuenta">
+									</td>
+									<td>
+										<label onmouseleave="ocultarAyuda();" onmouseenter="mostrarAyuda();" id="ayuda" class="lbl-login"><b>?</b></label>
+									</td>
+								</tr>
+								<tr>
+									<td class="td-boton">
+									<br>
+										<input onclick="volverCuenta();" type="button" id="volver-cuenta" value="Volver" class="button">
+									</td>
+									<td class="td-boton">
+									<br>
+										<input type="submit" name="crearJugador" value="Crear" class="button">
+									</td>
+								</tr>
+							</table>
+							<input type="hidden" name="tipoUsuario" value="recinto">
+						</form>
+						
+					</div>
+				
+			</div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,283 @@
+.header{
+	width: 80%;
+	height: 100px;
+	margin: 20px auto 10px auto;
+	background: black;
+	background: linear-gradient(#CBFFC0, #39F520);
+	border-radius: 8px;
+	box-shadow: 5px 5px 10px #3C2F00;
+	line-height: 130px;
+	position: relative;
+}
+
+.body{
+	margin: 20px auto 20px auto;
+	padding: 20px;
+	width: 80%;
+	height: 500px;
+	//background: linear-gradient(#CBFFC0, #39F520);
+	background: linear-gradient(rgba(203, 255, 192), rgba(57, 245, 32));
+	border-radius: 8px;
+	box-shadow: 5px 5px 10px #3C2F00;
+}
+
+.logo{
+	width: 150px;
+	line-height: 20px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	margin-left: 30px;
+}
+
+.top-usuario{
+	float: right;
+	font-family: verdana;
+	font-size: 20px;
+	margin-right: 35px;
+
+}
+
+.button{
+	font-family: 'Montserrat', sans-serif bold;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-bottom: hidden;
+	font-weight: bold;
+	background: linear-gradient(#01ABFF, #222DFF);
+	//box-shadow: 0px 1px 4px black;
+	color: #D2D7D9;
+	outline: none;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.button:hover{
+	//background: #0005E0;
+	border: 1px solid #414242;
+}
+
+
+body{
+	background-image: url(fondo.png);
+	background-size: 1520px 750px;
+	height: 100%;
+	width: 1520px;
+	margin: 0;
+}
+
+html{
+	height: 100%;
+	width: 1520px;
+	margin: 0;
+}
+
+.inicio{
+	vertical-align: middle;
+	margin: 100px auto 20px auto;
+	padding: 20px;
+	width: 40%;
+	height: 500px;
+	//background: linear-gradient(#CBFFC0, #39F520);
+	background: linear-gradient(rgba(203, 255, 192), rgba(57, 245, 32));
+	border-radius: 8px;
+	box-shadow: 5px 5px 10px #3C2F00;
+	//background-image: url(cesped.jpg);
+}
+
+.main{
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	height: 750px;
+	margin: auto;
+	position: absolute;
+}
+
+.contenedor-main{
+	width: 1028px;
+	height: 440px;
+	margin-left: 246px;
+	position: relative;
+	top: 25%;
+}
+
+.titulo{
+	float: left;
+	width: 600px;
+	height: 380px;
+	margin-top: 1%;
+	margin-left: 1%;
+	position: relative;
+}
+
+.contenedor-login{
+	float: right;
+	width: 400px;
+	height: 380px;
+	position: relative;
+	background-color: white;
+	border-radius: 3px;
+	//box-shadow: 5px 5px 10px #3C2F00;
+}
+
+.jugadores{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 45px;
+	color: #D7DCDE;
+}
+
+.descripcion{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 27px;
+	color: #F8FDFF;
+}
+
+.login{
+	width: 360px;
+	height: 340px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.txt-login{
+	border-radius: 5px;
+	width: 340px;
+	height: 30px;
+	border-top: 1px solid #86898A;
+	border-left: 1px solid #86898A;
+	border-right: 1px solid #86898A;
+	border-bottom: 1px solid #86898A;
+	font-family: Verdana;
+	font-size: 17px;
+	padding: 5px 10px 5px 10px;
+}
+
+.txt-login:focus{
+	outline: none !important;
+	border: 1px solid #2E70E8;
+}
+
+.lbl-login{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.boton-login{
+	width: 360px;
+	height: 40px;
+	background: linear-gradient(#1FD400, #169600) ; 
+	color: white;
+	font-family: 'Montserrat', sans-serif bold;
+}
+
+table{
+	table-layout: fixed;
+	overflow: auto;
+}
+
+.contenedor-crearCuenta{
+	width: 400px;
+	height: 560px;
+	background: white;
+	top: 20%;
+	vertical-align: top;
+	position: absolute;
+	margin-left: 36%;
+	border-radius: 5px;
+	visibility: hidden;
+}
+
+.crearCuenta{
+	width: 370px;
+	height: 530px;
+	margin-top: 15px;
+	margin-left: 15px;
+	position: absolute;
+}
+
+#crearCuenta-jugador{
+	//width: 370px;
+	//height: 530px;
+	visibility: hidden;
+	//position: absolute;
+	//background: black;
+}
+
+#crearCuenta-recinto{
+	//width: 370px;
+	//height: 530px;
+	visibility: hidden;
+	//position: absolute;
+}
+
+.lbl-user{
+	font-size: 40px;
+}
+
+#tabla-jugador{
+	width: 100%;
+}
+
+.txt-cuenta{
+	border-radius: 5px;
+	width: 340px;
+	height: 20px;
+	border-top: 1px solid #86898A;
+	border-left: 1px solid #86898A;
+	border-right: 1px solid #86898A;
+	border-bottom: 1px solid #86898A;
+	font-family: Verdana;
+	font-size: 13px;
+	padding: 5px 10px 5px 10px;
+}
+
+.txt-cuenta:focus{
+	outline: none !important;
+	border: 1px solid #2E70E8;
+}
+
+.td-boton{
+	margin: auto;
+	text-align: center;
+}
+
+#maps{
+	width: 300px;
+}
+
+#ayuda{
+	margin-left: 160px;
+}
+
+#contenedor-ayuda{
+	width: 420px;
+	height: 190px;
+	position: absolute;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px black;
+	margin-left: 410px;
+	margin-top: 250px;
+	visibility: hidden;
+}
+
+#mapa-ayuda{
+	width: 400px;
+	height: 170px;
+	margin-top: 10px;
+	margin-left: 10px;
+	position: absolute;
+	background: white;
+}
+
+#img-maps{
+	width: 400px;
+}
+
+.texto-verde{
+	color: green;
+}
