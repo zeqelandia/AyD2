@@ -1,0 +1,126 @@
+#main{
+	position: relative;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	height: 3000px;
+	margin: auto;
+	position: absolute;
+}
+
+#crear_eventos{
+	position: relative;
+	width: 250px;
+	height: 193px;
+}
+
+#evento1, #evento2, #evento3, #evento4, #evento5{
+	position: absolute;
+	background-color: white;
+	width: 250px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #3C2F00;
+	margin-left: 630px;
+	margin-top: 20px;
+}
+
+#eventos_creados{
+	position: relative;
+	margin-top: 60px;
+	margin-left: 400px;
+}
+
+#evento_creado3, #evento_creado4, #evento_creado5{
+	visibility: hidden;
+	position: relative;
+	margin-top: 20px;
+	background-color: white;
+	width: 175px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #3C2F00;
+	padding-right: 525px;
+}
+
+#evento_creado1, #evento_creado2{
+	position: relative;
+	visibility: visible;
+	margin-top: 20px;
+	background-color: white;
+	width: 175px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #3C2F00;
+	padding-right: 525px;
+}
+
+#evento_creado3usr{
+	visibility: visible;
+	margin-top: 20px;
+	background-color: white;
+	width: 175px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #3C2F00;
+	padding-right: 525px;
+}
+
+body{
+	font-family: verdana;
+	font-size: 12px;
+	background-image: url(fondo.png);
+	background-size: 1520px 750px;
+	height: 750px;
+	margin: 0;
+}
+
+html{
+	height: 750px;
+	margin: 0;
+}
+
+#btnCrearEvento{
+	margin-top: 10px; 
+	margin-left: 660px;
+	width: 200px;
+	height: 40px;
+	background: linear-gradient(#1FD400, #169600) ; 
+	color: white;
+	font-family: 'Montserrat', sans-serif bold;
+}
+
+#btnCrearEvento:hover{
+	border: 2px blue solid;
+}
+
+.boton_usuario{
+	font-family: 'Montserrat', sans-serif bold;
+	padding: 2px 4px;
+	border-radius: 5px;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-bottom: hidden;
+	font-weight: bold;
+	background: linear-gradient(#01ABFF, #222DFF);
+	//box-shadow: 0px 1px 4px black;
+	color: #D2D7D9;
+	outline: none;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.boton_usuario:hover{
+	border: 2px black solid;
+}

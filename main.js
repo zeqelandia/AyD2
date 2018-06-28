@@ -124,3 +124,13 @@ function ocultarAyuda() {
 	},900);
 	document.getElementById("ayuda").classList.remove("texto-verde");
 }
+
+function login(){
+	//var usuario = document.getElementById("txt-login").value;
+		if(document.getElementById("userName").value == "zeqe"){
+			window.open("admin.html", "_self");
+		}else{
+			window.open("user.html");
+		}
+	
+}

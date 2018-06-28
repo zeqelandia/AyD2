@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido a Falta Uno!</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="eventos.js"></script>
+	<link rel="stylesheet" type="text/css" href="users.css">
+</head>
+<body>
+	<div id="main">
+		<div id="controles">
+			<input type="button" id="btnCrearEvento" value="Crear Evento" onclick="crearEvento();">		
+		</div>
+		<div id="crear_eventos">
+			<div id="evento1" style="visibility: hidden;">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha del evento</label>
+						</td>
+						<td>
+							<input type="date" id="txtFecha1"><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Inicio </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraInicio1">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Fin </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraFin1">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Cant. Jugadores<br> Necesarios </label>
+						</td>
+						<td>
+							<input type="number" id="txtCantJugadores1">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar</label>
+						</td>
+						<td>
+							<input type="text" id="txtLugar1">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCancelar1" value="Cancelar" onclick="cancelar(1);">
+						</td>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCrear1" value="Crear" onclick="crear(1);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento2" style="visibility: hidden;">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha del evento</label>
+						</td>
+						<td>
+							<input type="date" id="txtFecha2"><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Inicio </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraInicio2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Fin </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraFin2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Cant. Jugadores<br> Necesarios </label>
+						</td>
+						<td>
+							<input type="number" id="txtCantJugadores2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar</label>
+						</td>
+						<td>
+							<input type="text" id="txtLugar2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCancelar2" value="Cancelar" onclick="cancelar(2);">
+						</td>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCrear2" value="Crear" onclick="crear(2);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento3" style="visibility: hidden;">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha del evento</label>
+						</td>
+						<td>
+							<input type="date" id="txtFecha3"><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Inicio </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraInicio3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Fin </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraFin3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Cant. Jugadores<br> Necesarios </label>
+						</td>
+						<td>
+							<input type="number" id="txtCantJugadores3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar</label>
+						</td>
+						<td>
+							<input type="text" id="txtLugar3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCancelar3" value="Cancelar" onclick="cancelar(3);">
+						</td>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCrear3" value="Crear" onclick="crear(3);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento4" style="visibility: hidden;">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha del evento</label>
+						</td>
+						<td>
+							<input type="date" id="txtFecha4"><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Inicio </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraInicio4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Fin </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraFin4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Cant. Jugadores<br> Necesarios </label>
+						</td>
+						<td>
+							<input type="number" id="txtCantJugadores4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar</label>
+						</td>
+						<td>
+							<input type="text" id="txtLugar4">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCancelar4" value="Cancelar" onclick="cancelar(4);">
+						</td>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCrear4" value="Crear" onclick="crear(4);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento5" style="visibility: hidden;">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha del evento</label>
+						</td>
+						<td>
+							<input type="date" id="txtFecha5"><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Inicio </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraInicio5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora de Fin </label>
+						</td>
+						<td>
+							<input type="text" id="txtHoraFin5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Cant. Jugadores<br> Necesarios </label>
+						</td>
+						<td>
+							<input type="number" id="txtCantJugadores5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar</label>
+						</td>
+						<td>
+							<input type="text" id="txtLugar5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCancelar5" value="Cancelar" onclick="cancelar(5);">
+						</td>
+						<td>
+							<input class="boton_usuario" type="button" id="btnCrear5" value="Crear" onclick="crear(5);">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="eventos_creados">
+			<div id="evento_creado1">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha: </label>
+						</td>
+						<td>
+							<label id="lblFecha1">2018-06-28</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Inicio: </label>
+						</td>
+						<td>
+							<label id="lblHoraInicio1">19:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Fin: </label>
+						</td>
+						<td>
+							<label id="lblHoraFin1">20:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Cant. Jgdrs: </label>
+						</td>
+						<td>
+							<label id="lblCantJugadores1">4</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar: </label>
+						</td>
+						<td>
+							<label>Ameghino</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Organizador: </label>
+						</td>
+						<td>
+							<label>zeqelandia</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Direccion</label>
+						</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2779.964433702972!2d-67.4795849!3d-45.8319943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455ea33089adf%3A0xb503db4004917b7!2sCancha+Club+Atletico+Flotentino+Ameghino!5e0!3m2!1ses-419!2sar!4v1530159408288" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnBorrar1" value="Borrar" onclick="borrar(1);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento_creado2">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha: </label>
+						</td>
+						<td>
+							<label id="lblFecha2">2018-06-28</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Inicio: </label>
+						</td>
+						<td>
+							<label id="lblHoraInicio2">20:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Fin: </label>
+						</td>
+						<td>
+							<label id="lblHoraFin2">21:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Cant. Jgdrs: </label>
+						</td>
+						<td>
+							<label id="lblCantJugadores2">1</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar: </label>
+						</td>
+						<td>
+							<label>Metrapet</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Organizador: </label>
+						</td>
+						<td>
+							<label>zeqelandia</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Direccion</label>
+						</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2780.0122284431086!2d-67.47579762087099!3d-45.831037431117124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455e862cda21b%3A0x355fe9df4d95e6f6!2sMetrapet+Sa!5e0!3m2!1ses-419!2sar!4v1530159467132" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnBorrar2" value="Borrar" onclick="borrar(2);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento_creado3">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha: </label>
+						</td>
+						<td>
+							<label id="lblFecha3">29/06</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Inicio: </label>
+						</td>
+						<td>
+							<label id="lblHoraInicio3">12:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Fin: </label>
+						</td>
+						<td>
+							<label id="lblHoraFin3">13:00</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Cant. Jgdrs: </label>
+						</td>
+						<td>
+							<label id="lblCantJugadores3">2</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar: </label>
+						</td>
+						<td>
+							<label>Metrapet</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Organizador: </label>
+						</td>
+						<td>
+							<label>zeqelandia</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Direccion</label>
+						</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2780.0122284431086!2d-67.47579762087099!3d-45.831037431117124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455e862cda21b%3A0x355fe9df4d95e6f6!2sMetrapet+Sa!5e0!3m2!1ses-419!2sar!4v1530159467132" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnBorrar3" value="Borrar" onclick="borrar(3);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento_creado4">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha: </label>
+						</td>
+						<td>
+							<label id="lblFecha4"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Inicio: </label>
+						</td>
+						<td>
+							<label id="lblHoraInicio4"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Fin: </label>
+						</td>
+						<td>
+							<label id="lblHoraFin4"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Cant. Jgdrs: </label>
+						</td>
+						<td>
+							<label id="lblCantJugadores4"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar: </label>
+						</td>
+						<td>
+							<label>Metrapet</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Organizador: </label>
+						</td>
+						<td>
+							<label>zeqelandia</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Direccion</label>
+						</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2780.0122284431086!2d-67.47579762087099!3d-45.831037431117124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455e862cda21b%3A0x355fe9df4d95e6f6!2sMetrapet+Sa!5e0!3m2!1ses-419!2sar!4v1530159467132" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnBorrar4" value="Borrar" onclick="borrar(4);">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="evento_creado5">
+				<table>
+					<tr>
+						<td>
+							<label>Fecha: </label>
+						</td>
+						<td>
+							<label id="lblFecha5"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Inicio: </label>
+						</td>
+						<td>
+							<label id="lblHoraInicio5"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Hora Fin: </label>
+						</td>
+						<td>
+							<label id="lblHoraFin5"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Cant. Jgdrs: </label>
+						</td>
+						<td>
+							<label id="lblCantJugadores5"></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Lugar: </label>
+						</td>
+						<td>
+							<label>Metrapet</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Organizador: </label>
+						</td>
+						<td>
+							<label>zeqelandia</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Direccion</label>
+						</td>
+						<td>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2780.0122284431086!2d-67.47579762087099!3d-45.831037431117124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455e862cda21b%3A0x355fe9df4d95e6f6!2sMetrapet+Sa!5e0!3m2!1ses-419!2sar!4v1530159467132" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input class="boton_usuario" type="button" id="btnBorrar5" value="Borrar" onclick="borrar(5);">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
